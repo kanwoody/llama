@@ -5,6 +5,12 @@
     text-decoration: none;
 }
 
+h2 {
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding-bottom: 30px;
+}
+
 .header {
   width: 100%;
   height: 80px;
@@ -67,4 +73,23 @@ main {
   margin-left: 7.5%;
   margin-right: 7.5%;
   border: 2px solid black;
+}
+
+.alpaca {
+  float: left;
+
+}
+
+.llama {
+  float: right;
+}
+
+.vicuna {
+  float: left;
+  padding-left: 225px;
+}
+
+.guanaco {
+  float: right;
+  padding-right: 225px;
 }
