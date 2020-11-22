@@ -5,10 +5,24 @@
     text-decoration: none;
 }
 
+p.welcome {
+  font-size: 16px;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #101010;
+  text-align: center;
+}
+
 h2 {
   text-align: center;
   font-family: 'Noto Sans JP', sans-serif;
   padding-bottom: 30px;
+}
+
+div.sub-heading {
+  background-color: #101010;
+  color: #dbdbdb;
+  font-family: 'Noto Sans JP', sans-serif;
+
 }
 
 .header {
@@ -63,7 +77,6 @@ h2 {
   vertical-align: middle;
   height: 100%;
   color: #dbdbdb;
-  font-family: '';
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -75,21 +88,32 @@ main {
   border: 2px solid black;
 }
 
-.alpaca {
+div.domesticated {
+  margin: 5px;
+  border: 1px solid #101010;
   float: left;
-
+  width: 200px;
 }
 
-.llama {
+div.domesticated:hover {
+  border: 1px solid #101010;
+}
+
+
+div.wild {
+  margin: 5px;
+  border: 1px solid #101010;
   float: right;
+  width: 200px;
 }
 
-.vicuna {
-  float: left;
-  padding-left: 225px;
+div.wild:hover {
+  border: 1px solid #101010;
 }
 
-.guanaco {
-  float: right;
-  padding-right: 225px;
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: #101010;
+  font-family: 'Noto Sans JP', sans-serif;
 }
