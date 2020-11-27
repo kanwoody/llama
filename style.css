@@ -88,38 +88,6 @@ main {
   border: 2px solid black;
 }
 
-div.domesticated {
-  margin: 5px;
-  /* border: 1px solid #101010; */
-  float: left;
-  width: 200px;
-  box-shadow: 8px 8px 8px grey;
-}
-
-div.domesticated:hover {
-  border: 1px solid #101010;
-}
-
-div.side-format-top {
-  float: right;
-}
-
-div.side-format-bottom {
-  float: right;
-}
-
-div.wild {
-  margin: 5px;
-  border: 1px solid #101010;
-  float: right;
-  width: 200px;
-  box-shadow: 8px 8px 8px grey;
-}
-
-div.wild:hover {
-  border: 1px solid #101010;
-}
-
 div.desc {
   padding: 10px;
   text-align: center;
@@ -150,4 +118,28 @@ div.tooltip {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+div.domesticated {
+  margin: 5px;
+  /* border: 1px solid #101010; */
+  float: left;
+  width: 200px;
+  box-shadow: 8px 8px 8px grey;
+}
+
+div.domesticated:hover {
+  border: 1px solid #101010;
+}
+
+div.wild {
+  margin: 5px;
+  border: 1px solid #101010;
+  float: right;
+  width: 200px;
+  box-shadow: 8px 8px 8px grey;
+}
+
+div.wild:hover {
+  border: 1px solid #101010;
 }
