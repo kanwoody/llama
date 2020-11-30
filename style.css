@@ -1,4 +1,4 @@
-/*applies default styling to  all */
+/* applies default styling to all content */
 *{
     margin: 0;
     padding: 0;
@@ -6,26 +6,9 @@
     text-decoration: none;
 }
 
-p.welcome {
-  font-size: 16px;
-  font-family: 'Noto Sans JP', sans-serif;
-  color: #101010;
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-  font-family: 'Noto Sans JP', sans-serif;
-  padding-bottom: 30px;
-}
-
-div.sub-heading {
-  background-color: #101010;
-  color: #dbdbdb;
-  font-family: 'Noto Sans JP', sans-serif;
-
-}
-
+/* styles a full header block that
+pre-defines the inner header height
+and color */
 .header {
   width: 100%;
   height: 80px;
@@ -33,6 +16,9 @@ div.sub-heading {
   background-color: #101010;
 }
 
+/* styles a section within the header for
+the content; an inner container for content
+is easier to resize */
 .inner_header {
   width: 1200px;
   height: 100%;
@@ -41,14 +27,19 @@ div.sub-heading {
   background-color: #101010;
 }
 
+/* creates a container that behaves as
+a table element for logo customization */ 
 .logo_container {
   height: 100%;
   display: table;
   float: left;
 }
 
+/* in this instance the logo is text-based,
+so this styles the text font, size, color, 
+alignment, and display type */
 .logo_container h1 {
-  color: #c9baa3;
+  color: #dbdbdb;
   height: 100%;
   display: table-cell;
   vertical-align: middle;
@@ -57,15 +48,26 @@ div.sub-heading {
   font-weight: 200;
 }
 
+/* this styles the span portion of the text
+logo with a different font weight; font-weight
+determines the thickness of the text */
 .logo_container h1 span {
   font-weight: 700;
 }
 
+/* within the logo container, the navigation
+class formats the header navigation links
+on the right side */
 .navigation {
   float: right;
   height: 100%;
 }
 
+/* formats the navigation items in the
+unordered list to be listed from left to
+right, rather than up to down. this works
+because its being styled inside of the
+navigation container */
 .navigation a {
   height: 100%;
   display: table;
@@ -73,6 +75,10 @@ div.sub-heading {
   padding: 0px 20px;
 }
 
+/* li elements in the navigation
+list behave as table cells for cleaner
+formatting, and text parameters are defined;
+including alignment, font, and color  */
 .navigation a li {
   display: table-cell;
   vertical-align: middle;
@@ -81,6 +87,34 @@ div.sub-heading {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+/* sub heading, within the first section, 
+defines the block that contains the 'welcome to
+the site' sub heading and sets the
+background-color and text style */
+div.sub-heading {
+  background-color: #101010;
+  color: #dbdbdb;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* applies this styling to all h2 elements */
+h2 {
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding-bottom: 30px;
+}
+
+/* applies this styling to all p elements */
+p {
+  font-size: 16px;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #101010;
+  text-align: center;
+}
+
+/* styles the main content section to be
+condensed within a margin from the outter limit
+with a white background and black border */
 main {
   margin-top: 100px;
   background-color: white;
@@ -88,7 +122,8 @@ main {
   margin-right: 7.5%;
   border: 2px solid black;
 }
-
+ /* styles the description text associated with
+ the image elements */
 div.desc {
   padding: 10px;
   text-align: center;
@@ -96,13 +131,23 @@ div.desc {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+/* defines the container that the functional
+tooltip will consist of, and center-aligns
+the text within */
 div.tooltip {
   position: relative;
   display: inline-block;
   text-align: center;
 }
 
-.tooltip .tooltiptext {
+/* styles the pop-up size, text, color,
+alignment, padding, margins, position type, 
+border-radius, and z-index (z-index 
+determines whether or not the element will
+show up in front of or behind other elements
+based on the number value. 1 = in front of
+whereas -1 is behind of) */
+.tooltiptext {
   visibility: hidden;
   width: 400px;
   top: 100%;
@@ -117,23 +162,34 @@ div.tooltip {
   z-index: 1;
 }
 
+/* tooltiptext is currently set to
+visibility: hidden. therefore, this styling
+says when you hover over tooltip (the container
+defined earlier in the CSS file), tooltiptext
+will be set to visibility: visible */
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
 
-div.species {
+/* styles the images of different species with
+a set width, margin, shadow, and rounded 
+corners, from the border radius */
+.species {
   margin: 5px;
-  float: right;
-  width: 200px;
+  width: 300px;
   box-shadow: 8px 8px 8px grey;
+  border-radius: 20px;
+  margin-right: 70px;
 }
 
-div.species:hover {
-  border: 1px solid #101010;
+.tree_diagram {
+  width: 45%;
+  border-radius: 50px;
+  border: 2px solid #101010;
+  margin: 1em;
 }
-
 .top {
-  margin-right: 1px;
+
 }
 
 .bottom {
@@ -141,8 +197,7 @@ div.species:hover {
 }
 
 .test_top, .test_bottom {
-  background-color: #ffffff;
-  position: 
+  background-color: #ffffff; 
 
 }
 
